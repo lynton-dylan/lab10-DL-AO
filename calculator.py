@@ -8,8 +8,7 @@ calculator.py
 
 One function per operation, in order.
 """
-<<<<<<< HEAD
-# First example
+
 import math
 
 def square_root(a):
