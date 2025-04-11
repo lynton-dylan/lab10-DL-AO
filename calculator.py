@@ -11,6 +11,18 @@ One function per operation, in order.
 
 import math
 
+def square_root(a):
+    try:
+        if a < 0:
+            raise ValueError
+        else:
+            return math.sqrt(a)
+    except ValueError:
+        print("Error: Cannot square root a negative number!")
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
+
 def add(a, b):
     return a + b
 
