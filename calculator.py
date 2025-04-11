@@ -1,9 +1,14 @@
+#https://github.com/lynton-dylan/lab10-DL-AO.git
+#Partner 1: Dylan Lynton
+#Partner 2: Aaliyah Otto
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
 
 One function per operation, in order.
 """
+<<<<<<< HEAD
 # First example
 import math
 
@@ -28,3 +33,25 @@ def log(a, b):
 
 def exp(a, b):
     return math.pow(a, b)
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def logarithm(a, b):
+    try:
+        if b <= 0 or a <= 0 or a == 1:
+            raise ValueError
+        else:
+            return math.log(b, a)
+    except ValueError:
+        print("Error: Invalid numbers for logarithm.")
+
+def exponent(a, b):
+    return a ** b
+
