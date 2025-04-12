@@ -60,6 +60,7 @@ class TestCalculator(unittest.TestCase):
             square_root(-9)
         self.assertEqual(square_root(2025), 45)
         self.assertEqual(square_root(196), 14)
+        self.assertAlmostEqual(square_root(20.25), 4.5)
     ##########################
 
 # Do not touch this
