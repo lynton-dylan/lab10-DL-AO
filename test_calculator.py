@@ -1,3 +1,7 @@
+#https://github.com/lynton-dylan/lab10-DL-AO.git
+#Partner 1: Dylan Lynton
+#Partner 2: Aaliyah Otto
+
 import unittest
 from calculator import *
 
@@ -15,11 +19,15 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 1
-    # def test_multiply(self): # 3 assertions
-    #     fill in code
+    def test_multiply(self): # 3 assertions
+        self.assertEqual(mul(6, 3), 18)
+        self.assertEqual(mul(4, 94), 376)
+        self.assertAlmostEqual(mul(7.6, 8.3), 63.08)
 
-    # def test_divide(self): # 3 assertions
-    #     fill in code
+    def test_divide(self): # 3 assertions
+        self.assertEqual(div(7, 56), 8)
+        self.assertAlmostEqual(div(3.6, 472.5), 131.25)
+        self.assertEqual(div(5, 2025), 405)
     # ##########################
 
     ######## Partner 2
@@ -38,21 +46,20 @@ class TestCalculator(unittest.TestCase):
     # ##########################
     
     ######## Partner 1
-    # def test_log_invalid_argument(self): # 1 assertion
-    #     # call log function inside, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     logarithm(0, 5)
-    #     fill in code
+    def test_log_invalid_argument(self): # 1 assertion
+        with self.assertRaises(ValueError):
+            logarithm(10, -1)
 
-    # def test_hypotenuse(self): # 3 assertions
-    #     fill in code
+    def test_hypotenuse(self): # 3 assertions
+        self.assertEqual(hypotenuse(9, 12), 15)
+        self.assertEqual(hypotenuse(3, 4), 5)
+        self.assertEqual(hypotenuse(5, 12), 13)
 
-    # def test_sqrt(self): # 3 assertions
-    #     # Test for invalid argument, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #    square_root(NUM)
-    #     # Test basic function
-    #     fill in code
+    def test_sqrt(self): # 3 assertions
+        with self.assertRaises(ValueError):
+            square_root(-9)
+        self.assertEqual(square_root(2025), 45)
+        self.assertEqual(square_root(196), 14)
     ##########################
 
 # Do not touch this
