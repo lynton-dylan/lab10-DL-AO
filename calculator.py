@@ -19,6 +19,7 @@ def square_root(a):
             return math.sqrt(a)
     except ValueError:
         print("Error: Cannot square root a negative number!")
+        raise
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
@@ -45,6 +46,7 @@ def logarithm(a, b):
             return math.log(b, a)
     except ValueError:
         print("Error: Invalid numbers for logarithm.")
+        raise
 
 def exp(a, b):
     return math.pow(a, b)
