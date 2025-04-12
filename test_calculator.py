@@ -8,7 +8,7 @@ from calculator import *
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
     def test_add(self): # 3 assertions
-        self.assertEqual(add(0.6, 0.8), 1.4)
+        self.assertAlmostEqual(add(0.6, 0.8), 1.4)
         self.assertEqual(add(-7, -9), -16)
         self.assertEqual(add(-30, 10), -20)
 
